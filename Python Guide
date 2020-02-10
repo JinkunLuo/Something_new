@@ -1,0 +1,10 @@
+### Open file 
+# Using with sentence: 因为同一时间能够打开的文件数目有限，使用“with”可以确保无论文件读写是否出错都能够成功关闭文件
+# f: 文件名
+### Read file
+# read(): 每次读一整个文档 --> output: String
+# readline(): 每次读一行 --> output: String
+# readlines(): 每次读所有行 --> output: List<String>
+
+with open(filename, 'r') as f:
+  f.read()
