@@ -1,10 +1,10 @@
 ### Open file 
-# Using with sentence: 因为同一时间能够打开的文件数目有限，使用“with”可以确保无论文件读写是否出错都能够成功关闭文件
-# f: 文件名
+  # Using with sentence: 因为同一时间能够打开的文件数目有限，使用“with”可以确保无论文件读写是否出错都能够成功关闭文件
+  # f: 文件名
 ### Read file
-# read(): 每次读一整个文档 --> output: String
-# readline(): 每次读一行 --> output: String
-# readlines(): 每次读所有行 --> output: List<String>
+  # read(): 每次读一整个文档 --> output: String
+  # readline(): 每次读一行 --> output: String
+  # readlines(): 每次读所有行 --> output: List<String>
 
 with open(filename, 'r') as f:
   f.read()
@@ -18,10 +18,16 @@ if __name__ == "__main__":
     main()
 
 ### Dictionary operation
-# Sort --> return list
-  # 1st parameter --> 要进行sorted的对象
-  # 2nd parameter --> 排序依据：根据在1st parameter中每一项的第几个进行排序
-  #               --> 如：x[1]为字典的value，x[0]为字典的key
-  # 3rd parameter --> 默认升序，reverse=True为降序
+### Sort --> return list
+    # 1st parameter --> 要进行sorted的对象
+    # 2nd parameter --> 排序依据：根据在1st parameter中每一项的第几个进行排序
+    #               --> 如：x[1]为字典的value，x[0]为字典的key
+    # 3rd parameter --> 默认升序，reverse=True为降序
+  # Return --> list of set
+    # Set canNOT index --> 想要保留仅原字典的key或者value，需要遍历排序结果，convert to list for index
 d1 = {"a":1, "b":3, "c":5}
 l = sorted(d1.items(), key=lambda x:x[1], reverse=True)
+
+### Set operation 
+  # Cannot index
+  # Used to reduce duplicate
