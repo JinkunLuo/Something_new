@@ -18,6 +18,7 @@ if __name__ == "__main__":
     main()
 
 ### Dictionary operation
+### Nice source: https://python3-cookbook.readthedocs.io/zh_CN/latest/c01/p08_calculating_with_dict.html
 ### Sort --> return list
     # 1st parameter --> 要进行sorted的对象
     # 2nd parameter --> 排序依据：根据在1st parameter中每一项的第几个进行排序
