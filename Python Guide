@@ -1,13 +1,24 @@
 ### Open file 
   # Using with sentence: 因为同一时间能够打开的文件数目有限，使用“with”可以确保无论文件读写是否出错都能够成功关闭文件
   # f: 文件名
-### Read file
-  # read(): 每次读一整个文档 --> output: String
-  # readline(): 每次读一行 --> output: String
-  # readlines(): 每次读所有行 --> output: List<String>
-
+  ### Read txt file
+    # read(): 每次读一整个文档 --> output: String
+    # readline(): 每次读一行 --> output: String
+    # readlines(): 每次读所有行 --> output: List<String>
 with open(filename, 'r') as f:
   f.read()
+
+### Open file folder
+  # path: 要查看的文件夹
+  # filename: path路径下的所有文件
+  # 新路径: 原路径 + ‘/’ + 文件名
+import os
+path = ''
+for filename in os.listdir('path'):
+    new_path = path + '/' + filename
+    # for sub_filename in os.listdir(new_path) --> 继续访问子文件夹
+    # with open(new_path, 'r') as txt: --> 打开txt
+    #   txt.read()
 
 
 ### Main function
