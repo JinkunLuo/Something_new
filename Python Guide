@@ -23,6 +23,7 @@ for filename in os.listdir('path'):
 ### os.walk()函数 --> 可以用来遍历子文件夹
   # 迭代器：迭代访问子文件、子文件的子文件, 需要for循环遍历结果
   # 返回元组，该元组有3个元素，这3个元素分别表示每次遍历的路径名，目录列表和文件列表
+     # 每个元素为1个String list
 
 
 ### Main function
